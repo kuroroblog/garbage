@@ -9,7 +9,7 @@ def getToday():
     # 一度本日の日付を整形して文字列型にし、再度date型へ変形する。
     return datetime.datetime.strptime(today.strftime('%Y-%m-%d'), '%Y-%m-%d')
 
-# 本日の日付が◯曜日を基準とした場合に、第何週目の曜日なのか算出する関数
+# 本日の日付が◯曜日を基準とした場合に、第何週目なのか算出する関数
 # https://note.nkmk.me/python-calendar-datetime-nth-dow/
 # dt : 本日の日付
 # firstWeekDay : 0~6, 0 : 月曜日, 1 : 火曜日, 2 : 水曜日, 3 : 木曜日, 4 : 金曜日, 5 : 土曜日, 6 : 日曜日, default : 月曜日
